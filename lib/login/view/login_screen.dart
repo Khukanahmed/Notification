@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:test_project/home/screen/home_screen.dart';
 import 'package:test_project/login/controller/login_controller.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -18,7 +19,7 @@ class LoginScreen extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                //Get.to();
+                Get.to(() => VoicePage());
                 if (kDebugMode) {
                   print('object');
                 }
